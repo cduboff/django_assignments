@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <form action="/result" method="post">
+        {% csrf_token %}
+        <h1>Dojo Survey</h1>
+        <p>Your Name: <input name="name" type="text"></p>
+        <p>Location:<input type="radio" id="online" name="location" value="online"> Online <input type="radio" id="california" name="location"> California <input type="radio" value="chicago" name="location">Chicago</p>
+        <p>Lanugages Known:<br><input type="checkbox" id="python" name="languages_known" value="Python"> Python<br><input type="checkbox" id="javascript" name="languages_known" value="JavaScript"> JavaScript<br><input type="checkbox" id="java" name="languages_known" value="Java"> Java<br><input type="checkbox" id="ruby" name="languages_known" value="Ruby">Ruby<br><input type="checkbox" id="none" name="languages_known" value="None">None
+        <p>Comment (optional)</p>
+        <textarea name="comment"></textarea>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+div{
+    border: 2px solid brown;
+    padding-left: 45px;
+    background-color: palegoldenrod;
+    width: 350px;
+    height: 200px;
+    margin: 0px auto;
+}
+h1{
+    color: olivedrab;
+    margin: 10px;
+}
