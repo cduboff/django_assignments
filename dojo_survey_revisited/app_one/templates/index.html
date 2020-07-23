@@ -14,16 +14,14 @@
 
         <p>Your Name: <input name="name" type="text"></p>
         <p>Dojo Location:<select name="location">
-            <option value="Online">Online</option>
-            <option value="California">California</option>
-            <option value="Chicago">Chicago</option>
+            {% for loc in location %}
+            <option value="{{loc}}">{{ loc }}</option>
+            {% endfor %}
         </select></p>
         <p>Favorite Language:<select name="favorite_language">
-            <option value="Python">Python</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="Java">Java</option>
-            <option value="Ruby">Ruby</optizon>
-            <option value="None">None</optizon>
+            {% for lang in favorite_language %}
+            <option value="{{lang}}">{{ lang }}</option>
+            {% endfor %}
         </select></p>
         <p>Comment (optional)</p>
         <textarea name="comment"></textarea>
