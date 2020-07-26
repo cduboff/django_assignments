@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1>Random Word Generator</h1>
-    <p>Attempt #: {{ request.session.count }}</p>
-    <p>{{ request.session.word }}</p>
-    <a href="/word/reset">Reset Count</a>
+    <div id="wrapper">
+        <h1>Random Word Generator</h1>
+        <p>Attempt #: {{ request.session.count }}</p>
+        <p>{{ request.session.word }}</p>
+        <a href="word/reset">Reset Count</a>
+    </div>
 </body>
 </html>

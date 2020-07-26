@@ -1,3 +1,11 @@
+#wrapper{
+    margin: 0px auto;
+    background-color: rgb(180, 176, 141);
+}
 h1{
-    text-align: center;
+    color: rgb(43, 253, 155);
+}
+a{
+    text-decoration: none;
+    border: 1px solid rgb(0, 153, 82);
 }
